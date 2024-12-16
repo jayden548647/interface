@@ -1,14 +1,13 @@
-using UnityEditor.Audio;
 using UnityEngine;
 
-public class proceed : MonoBehaviour
+public class ButtonClick : MonoBehaviour
 {
-   
-    
+    public AudioSource sounding;
+    public AudioClip clip;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
+        sounding = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -16,14 +15,8 @@ public class proceed : MonoBehaviour
     {
         
     }
-
-    public void ButtonMethod()
+    public void ButtonSound()
     {
-        LevelManager.Instance.SceneLoad("Game");
-    }
-    
-    public void surrender()
-    {
-        Application.Quit();
+        sounding.PlayOneShot(clip);
     }
 }

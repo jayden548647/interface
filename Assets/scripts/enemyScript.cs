@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class enemyScript : MonoBehaviour
 {
-    public int difficultyValue;
+    public float difficultyValue;
     public void Awake()
     {
-        int rng = Random.Range(1, 21);
+        difficultyValue = PlayerPrefs.GetFloat("Difficulty");
+        int rng = Random.Range(0, 20);
 
         if (rng + 1 > difficultyValue)
         {
