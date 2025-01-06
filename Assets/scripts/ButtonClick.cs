@@ -4,10 +4,11 @@ public class ButtonClick : MonoBehaviour
 {
     public AudioSource sounding;
     public AudioClip clip;
+    
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        sounding = GetComponent<AudioSource>();
+        sounding = GameObject.FindGameObjectWithTag("Manager").GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
