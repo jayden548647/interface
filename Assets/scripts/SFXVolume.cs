@@ -8,6 +8,7 @@ public class SFXVolume : MonoBehaviour
 {
     public AudioMixer mixer;
     public Slider slider;
+    
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
@@ -18,7 +19,7 @@ public class SFXVolume : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+        LevelManager.Instance.SetSFX(slider.value);
     }
     public void SetLevel(float sliderValue)
     {
