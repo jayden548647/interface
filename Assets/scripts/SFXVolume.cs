@@ -30,7 +30,7 @@ public class SFXVolume : MonoBehaviour
 
         if (sliderValue == 0)
         {
-            mixer.SetFloat("SFXVol", -40);
+            mixer.SetFloat("SFXVol", -80);
         }
         PlayerPrefs.SetFloat("SFXVolume", sliderValue);
     }

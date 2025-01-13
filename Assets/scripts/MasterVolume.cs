@@ -29,7 +29,7 @@ public class MasterVolume : MonoBehaviour
 
         if (sliderValue == 0)
         {
-            mixer.SetFloat("MasterVol", -40);
+            mixer.SetFloat("MasterVol", -80);
         }
         PlayerPrefs.SetFloat("MasterVolume", sliderValue);
     }

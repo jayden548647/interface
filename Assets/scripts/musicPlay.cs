@@ -8,17 +8,19 @@ public class musicPlay : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Awake()
     {
-        TheMusic();  
+        TheMusic();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        PlayMusic.loop = true;
     }
 
     public void TheMusic()
     {
         PlayMusic.PlayOneShot(PlayMusicClip);
+        
     }
 }

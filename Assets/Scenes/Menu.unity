@@ -1889,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayMusic: {fileID: 713048288}
-  PlayMusicClip: {fileID: 8300000, guid: 7c92303315620c547a5fa835e88839bd, type: 3}
+  PlayMusicClip: {fileID: 8300000, guid: e5904ebf689ef364eb110f3db2e29281, type: 3}
 --- !u!1 &728484298
 GameObject:
   m_ObjectHideFlags: 0
@@ -2643,6 +2643,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 953500494}
+  - component: {fileID: 953500495}
   m_Layer: 0
   m_Name: Menu
   m_TagString: Untagged
@@ -2665,6 +2666,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &953500495
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 953500493}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 21f19ba16cd20bf4c84ef93ae3ac83af, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mixer: {fileID: 24100000, guid: 950d7149f7730e34ab7fe619ab839288, type: 2}
 --- !u!1 &969569223
 GameObject:
   m_ObjectHideFlags: 0

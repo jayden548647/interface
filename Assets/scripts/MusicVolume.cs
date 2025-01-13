@@ -37,7 +37,7 @@ public class MusicVolume : MonoBehaviour
 
         if(sliderValue == 0 )
         {
-            mixer.SetFloat("MusicVol", -40);
+            mixer.SetFloat("MusicVol", -80);
         }
         PlayerPrefs.SetFloat("MusicVolume", sliderValue);
     }
