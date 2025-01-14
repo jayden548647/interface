@@ -1,4 +1,3 @@
-using UnityEditor.Audio;
 using UnityEngine;
 
 public class proceed : MonoBehaviour
